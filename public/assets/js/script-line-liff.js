@@ -3,7 +3,7 @@ let protocol = url.protocol;
 let hostname = url.hostname;
 let pathname = url.pathname;
 // check if in dev environment
-const apiUrl = hostname == "localhost" ? "http://localhost:1231/" : "https://dicodingwebapp.herokuapp.com";
+const apiUrl = hostname == "localhost" ? "http://localhost:1231/" : "https://dicodingwebapp.herokuapp.com/";
 const baseUrl = hostname == "localhost" ? `${protocol}//${hostname}${pathname}` : `${protocol}//${hostname}/`;
 let diaryArr = [];
 const lineLiff = {
