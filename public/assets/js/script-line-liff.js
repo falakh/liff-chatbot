@@ -3,13 +3,13 @@ let protocol = url.protocol;
 let hostname = url.hostname;
 let pathname = url.pathname;
 // check if in dev environment
-const apiUrl = hostname == "localhost" ? "http://localhost:1231/" : "https://simple-diary.herokuapp.com/";
+const apiUrl = hostname == "localhost" ? "http://localhost:1231/" : "https://dicodingwebapp.herokuapp.com";
 const baseUrl = hostname == "localhost" ? `${protocol}//${hostname}${pathname}` : `${protocol}//${hostname}/`;
 let diaryArr = [];
 const lineLiff = {
   init: () => {
     liff
-      .init({ liffId: "1653656371-KpAnBYaa" })
+      .init({ liffId: "1653720179-oEZpz6gO" })
       .then(() => {
         console.log("berhasil di init");
       })
